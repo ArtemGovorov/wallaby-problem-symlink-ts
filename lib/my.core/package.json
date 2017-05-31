@@ -1,0 +1,13 @@
+{
+  "name": "my.core",
+  "private": true,
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "build": "npm install"
+  },
+  "dependencies": {
+    "decimal.js-light": "^2.2.2",
+    "moment": "^2.17.1"
+  }
+}

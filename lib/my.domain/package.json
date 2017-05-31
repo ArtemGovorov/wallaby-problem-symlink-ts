@@ -1,0 +1,15 @@
+{
+  "name": "my.domain",
+  "private": true,
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "build": "npm install"
+  },
+  "dependencies": {
+    "linq": "^3.0.8",
+    "my.core": "file:../my.core",
+    "uuid": "^3.0.1",
+    "washon.core": "file:../my.core"
+  }
+}

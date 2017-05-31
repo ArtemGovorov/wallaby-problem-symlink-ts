@@ -1,0 +1,34 @@
+{
+    "compilerOptions": 
+    {
+        "baseUrl": ".",
+        "rootDir": ".",        
+        "noEmit": false,
+        "sourceMap": true,
+        "pretty": false,
+        "declaration": true,
+        "skipLibCheck": true,
+        "preserveConstEnums": true,
+        "strictNullChecks": true,
+        "typeRoots": [
+            "./node_modules/@types/"
+        ],
+        "lib": [
+            "dom",
+            "es2015",
+            "es2016"
+        ],
+        "target": "es2015",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "allowJs": false, 
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": false,
+        "experimentalDecorators": true,
+        "removeComments": true       
+    },
+    "exclude": [
+        "**/*.spec.ts",
+        "node_modules"
+    ]
+}
