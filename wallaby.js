@@ -5,15 +5,13 @@ module.exports = (wallaby) => {
 
   return {
     files: [
-      '!lib/**/node_modules',
-      'lib/my.core/**/*.ts',
-      '!lib/my.core/**/*.spec.ts',                        
-      'lib/my.domain/**/*.ts',
-      '!lib/my.domain/**/*.spec.ts'      
+      '!lib/**/node_modules/**',
+      'lib/**/*.ts',
+      '!lib/**/*.spec.ts'      
     ],
     tests: [
-      'lib/my.core/**/*.spec.ts',      
-      'lib/my.domain/**/*.spec.ts'
+      '!lib/**/node_modules/**',
+      'lib/**/*.spec.ts'
     ],
     debug: true,
     env: {
