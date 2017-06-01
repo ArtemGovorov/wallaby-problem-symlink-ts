@@ -1,6 +1,8 @@
 module.exports = (wallaby) => {
 
-  var compilerOptions = require('./tsconfig.json').compilerOptions; 
+  var path = require('path');
+  process.env.NODE_PATH += path.delimiter + path.join(wallaby.projectCacheDir, 'lib');
+
   return {
     files: [
       'lib/my.core/**/*.ts',
@@ -12,20 +14,10 @@ module.exports = (wallaby) => {
       'lib/my.core/**/*.spec.ts',      
       'lib/my.domain/**/*.spec.ts'
     ],
-    compilers: {
-      '**/*.ts': wallaby.compilers.typeScript(compilerOptions)
-    },
     debug: true,
     env: {
       type: 'node',
       runner: 'node'
-    },
-    testFramework: 'mocha',
-    workers: {
-       recycle: true,
-       initial: 0,
-       regular: 1
-     }
-
+    }
   };
 };
