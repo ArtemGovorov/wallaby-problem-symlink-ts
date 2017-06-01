@@ -5,6 +5,7 @@ module.exports = (wallaby) => {
 
   return {
     files: [
+      '!lib/**/node_modules',
       'lib/my.core/**/*.ts',
       '!lib/my.core/**/*.spec.ts',                        
       'lib/my.domain/**/*.ts',
